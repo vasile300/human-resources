@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<title>human resource</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+  /* Aggiungi un margine sinistro di 20px alla tabella del contatto */
+  table {
+    margin-left: 20px;
+  }
+</style>
+<body>
+
+<!-- Navbar (Sits on top) -->
+<div class="w3-top w3-bar w3-white w3-wide w3-padding w3-card">
+  <a href="/HRWORKPOWER/" class="w3-bar-item w3-button"><b>HR</b> WORKPOWER</a>
+
+  <!-- Float links to the right. Hide them on small screens -->
+  <div class="w3-right w3-hide-small">
+            <a href="/" class="w3-bar-item w3-button">Acasa</a>
+
+    <a href="/Candidati/" class="w3-bar-item w3-button">Candidati</a>
+    <a href="/Companii/" class="w3-bar-item w3-button">Companii</a>
+    <a href="/OfertadeLucru/" class="w3-bar-item w3-button">Oferta de Lucru</a>
+    <a href="/Contact/" class="w3-bar-item w3-button">Contact</a>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<!-- Page Start -->
+<div id="home" class="w3-content" style="max-width:1564px">
+
+  <!-- Image in Display Container -->
+
+
+  <!-- Page End -->
+</div>
+
+<!-- Contact Section -->
+<div class="w3-container">
+  <table>
+
+    <h1>Inregistrare</h1>
+    <tr>
+      <td>Nume:</td>
+      <td><input type="text" id="nume" name="nume"></td>
+    </tr>
+    <tr>
+      <td>Email:</td>
+      <td><input type="email" id="email" name="email"></td>
+    </tr>
+    <tr>
+      <td>Mesaj:</td>
+      <td><textarea id="mesaj" name="mesaj" rows="4" cols="50"></textarea></td>
+    </tr>
+  </table>
+  <br><br>
+  <input type="submit" value="Trimite" onclick="validateForm()">
+</div>
+
+<!-- JavaScript per la validazione del form -->
+<script>
+  function validateForm() {
+    var nume = document.getElementById("nume").value;
+    var email = document.getElementById("email").value;
+    var mesaj = document.getElementById("mesaj").value;
+
+    if (nume == "" || email == "" || mesaj == "") {
+      alert("Toate câmpurile trebuie completate!");
+      return false;
+    }
+  }
+</script>
+
+</body>
+</html>
